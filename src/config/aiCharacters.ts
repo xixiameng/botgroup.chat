@@ -16,7 +16,7 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
+    model: "doubao-1.5-pro-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
     apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
@@ -26,7 +26,7 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "glm-4-air",
+    model: "glm-4-flash-250414",
     apiKey: "GLM_API_KEY",
     baseURL: "https://open.bigmodel.cn/api/paas/v4/"
   },
@@ -41,12 +41,12 @@ export const modelConfigs = [
     baseURL: "https://api.deepseek.com/v1"
   },
   {
-    model: "moonshot-v1-8k",
-    apiKey: "KIMI_API_KEY",
-    baseURL: "https://api.moonshot.cn/v1"
+    model: "gpt-4o-mini",
+    apiKey: "GPT_API_KEY",
+    baseURL: "https://gpt.xixiameng.cn/v1"
   },
   {
-    model: "ernie-3.5-128k",
+    model: "ernie-speed-128k",
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
   }
@@ -115,7 +115,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai4', 
       name: "元宝", 
       personality: "yuanbao",
-      model: modelConfigs[2].model,
+      model: modelConfigs[7].model,
       avatar: "/img/yuanbao.png",
       custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["微信", "聊天", "新闻报道",  "文字游戏", "娱乐", "信息总结"]
@@ -133,7 +133,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai6', 
       name: "千问", 
       personality: "qianwen",
-      model: modelConfigs[0].model,
+      model: modelConfigs[6].model,
       avatar: "/img/qwen.jpg",
       custom_prompt: `你是一个名叫"千问"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["广告文案","分析数据","文字游戏","信息总结", "聊天"]
@@ -158,11 +158,11 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
     },
     {
       id: 'ai9',
-      name: "Kimi",
-      personality: "kimi",
+      name: "openai",
+      personality: "openai",
       model: modelConfigs[8].model,
-      avatar: "/img/kimi.jpg",
-      custom_prompt: `你是一个名叫"Kimi"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      avatar: "/img/openai.jpg",
+      custom_prompt: `你是一个名叫"openai"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
     },
     {
