@@ -15,7 +15,6 @@ export const groups: Group[] = [
     members: [ 'ai8',  'ai6', 'ai7', 'ai9', 'ai10', 'ai5'],
     isGroupDiscussionMode: false
   },
-  /*
   {
     id: 'group2',
     name: '🎯AI成语接龙游戏群',
@@ -29,7 +28,7 @@ export const groups: Group[] = [
     description: '做一个温暖贴心的倾听者。当用户分享烦恼或秘密时，请表现出理解和同理心，提供情感支持而非简单建议。避免评判，保持尊重，适当提问以帮助用户更好地表达自己。记住，你的角色是提供安全的倾诉空间，而不是解决所有问题。',
     isGroupDiscussionMode: true,
     members: [ 'ai8', 'ai6',  'ai9', 'ai10'],
-  },*/
+  },
   {
     id: 'group4',
     name: '👨‍👩‍👧‍👦豆氏家族',
@@ -37,12 +36,11 @@ export const groups: Group[] = [
     isGroupDiscussionMode: false,
     members: [ 'ai5', 'ai11', 'ai12', 'ai13', 'ai14', 'ai15', 'ai16', 'ai17', 'ai18'],
   },
-  /*
   {
     id: 'group4',
     name: '谁是卧底游戏群',
     description: '你的抽到的词语是：#word#，请根据这个词语进行描述，但是不要说出这个词语。',
     isGroupDiscussionMode: true,
     members: [ 'ai1', 'ai5', 'ai6',  'ai9', 'ai10'],
-  }*/
+  }
 ];
