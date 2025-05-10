@@ -1,17 +1,17 @@
 // 首先定义模型配置
 export const modelConfigs = [
   {
-    model: "qwen-plus",
+    model: "qwen-plus",//调度模型
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "deepseek-v3-250324",
+    model: "deepseek-v3-250324",//火山引擎
     apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "hunyuan-turbos-latest",
+    model: "hunyuan-turbos-latest",//腾讯混元
     apiKey: "HUNYUAN_API_KEY1",
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
@@ -26,27 +26,27 @@ export const modelConfigs = [
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
-    model: "glm-4-flash-250414",
+    model: "glm-4-flash-250414",//智谱ai
     apiKey: "GLM_API_KEY",
     baseURL: "https://open.bigmodel.cn/api/paas/v4/"
   },
   {
-    model: "qwen-turbo",//调度模型
+    model: "qwen-plus",//阿里云百炼-千问
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "deepseek-chat",
+    model: "deepseek-chat",//deepseek官方
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
   {
-    model: "gpt-4o-mini",
+    model: "gpt-4o-mini",//mygpt
     apiKey: "GPT_API_KEY",
     baseURL: "https://gpt.xixiameng.cn/v1"
   },
   {
-    model: "ernie-speed-128k",
+    model: "ernie-3.5-8k",//百度千帆v2
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
   }
@@ -161,7 +161,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       name: "openai",
       personality: "openai",
       model: modelConfigs[8].model,
-      avatar: "/img/openai.jpg",
+      avatar: "/img/openai.png",
       custom_prompt: `你是一个名叫"openai"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
     },
